@@ -22,13 +22,14 @@ class MainViewController: UIViewController {
 
 extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        5
+        presenter.comments?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let comments = presenter.comments?[indexPath.row]
 
-        cell.textLabel?.text = "fwweff"
+        cell.textLabel?.text = comments?.body
 
         return cell
     }
@@ -38,10 +39,10 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
 
 extension MainViewController: MainViewProtocol {
     func succes() {
-        <#code#>
+        tableView.reloadData()
     }
 
-    func failure() {
-        <#code#>
+    func failure(error: Error) {
+        print("error")
     }
 }
