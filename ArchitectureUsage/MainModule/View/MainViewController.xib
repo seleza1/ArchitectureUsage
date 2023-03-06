@@ -20,26 +20,37 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I15-dO-e1P">
-                    <rect key="frame" x="186" y="244" width="42" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggk-EE-BVf">
-                    <rect key="frame" x="170" y="430" width="75" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                    <connections>
-                        <action selector="showGreetingButton:" destination="-1" eventType="touchUpInside" id="Dll-mK-w4s"/>
-                    </connections>
-                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="89" translatesAutoresizingMaskIntoConstraints="NO" id="4NH-HL-ZyA">
+                    <rect key="frame" x="169.66666666666666" y="296.33333333333331" width="75" height="143.66666666666669"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I15-dO-e1P">
+                            <rect key="frame" x="16" y="0.0" width="43" height="20.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggk-EE-BVf">
+                            <rect key="frame" x="0.0" y="109.33333333333337" width="75" height="34.333333333333343"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <connections>
+                                <action selector="showGreetingButton:" destination="-1" eventType="touchUpInside" id="Dll-mK-w4s"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="I15-dO-e1P" firstAttribute="leading" secondItem="4NH-HL-ZyA" secondAttribute="leading" constant="16" id="W5L-jl-nDO"/>
+                        <constraint firstAttribute="trailing" secondItem="I15-dO-e1P" secondAttribute="trailing" constant="16" id="jzh-sp-cTC"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="140" y="20"/>
+            <constraints>
+                <constraint firstItem="4NH-HL-ZyA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0Fo-ev-FEn"/>
+                <constraint firstItem="4NH-HL-ZyA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ihW-jC-2PM"/>
+            </constraints>
+            <point key="canvasLocation" x="139.13043478260872" y="19.565217391304348"/>
         </view>
     </objects>
     <resources>

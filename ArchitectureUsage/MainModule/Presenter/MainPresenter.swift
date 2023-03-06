@@ -27,7 +27,7 @@ class MainPresenter:MainViewPresenterProtocol {
     }
 
     func showGreeting() {
-        let greeting = "\(person.firstName) + \(person.firstName)"
+        let greeting = "\(person.firstName) + \(person.lastName)"
         view.setGreeting(greeting: greeting)
     }
 

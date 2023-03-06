@@ -16,6 +16,8 @@ class ModelBuilder: Builder {
         let person = Person(firstName: "Selezza", lastName: "crame")
         let view = MainViewController()
         let presenter = MainPresenter(view: view, person: person)
-        
+        view.presenter = presenter
+
+        return view
     }
 }

@@ -136,9 +136,9 @@
 		CEB63D9529B5FDD400108D43 /* MainModule */ = {
 			isa = PBXGroup;
 			children = (
+				CEB63D9629B5FDF100108D43 /* Model */,
 				CEB63D9829B5FE0000108D43 /* View */,
 				CEB63D9729B5FDFA00108D43 /* Presenter */,
-				CEB63D9629B5FDF100108D43 /* Model */,
 			);
 			path = MainModule;
 			sourceTree = "<group>";
@@ -173,8 +173,8 @@
 			children = (
 				CEB63D6029B5F5F600108D43 /* AppDelegate.swift */,
 				CEB63D6229B5F5F600108D43 /* SceneDelegate.swift */,
-				CEB63D6E29B5F5FA00108D43 /* Info.plist */,
 				CEB63D9D29B6001A00108D43 /* ModuleBuilder.swift */,
+				CEB63D6E29B5F5FA00108D43 /* Info.plist */,
 			);
 			path = Applications;
 			sourceTree = "<group>";

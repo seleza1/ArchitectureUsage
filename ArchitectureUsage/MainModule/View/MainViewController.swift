@@ -28,7 +28,5 @@ extension MainViewController: MainViewProtocol {
     func setGreeting(greeting: String) {
         greetingLabel.text = greeting
     }
-
-
 }
 
