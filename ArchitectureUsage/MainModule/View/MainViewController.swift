@@ -15,7 +15,6 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     @IBAction func showGreetingButton(_ sender: UIButton) {
@@ -24,7 +23,7 @@ class MainViewController: UIViewController {
 
 }
 
-extension MainViewController: MainViewProtocol {
+extension MainViewController: MainViewProtocol {  // Bainding
     func setGreeting(greeting: String) {
         greetingLabel.text = greeting
     }

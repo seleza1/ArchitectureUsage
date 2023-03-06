@@ -20,6 +20,7 @@
 		CEB63D9429B5F6D600108D43 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB63D9329B5F6D600108D43 /* MainPresenter.swift */; };
 		CEB63D9C29B5FF1200108D43 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB63D9B29B5FF1200108D43 /* MainViewController.xib */; };
 		CEB63D9E29B6001A00108D43 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB63D9D29B6001A00108D43 /* ModuleBuilder.swift */; };
+		CEB63DA329B6232D00108D43 /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB63DA229B6232D00108D43 /* MainPresenterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		CEB63D9329B5F6D600108D43 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		CEB63D9B29B5FF1200108D43 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		CEB63D9D29B6001A00108D43 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		CEB63DA229B6232D00108D43 /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		CEB63D7629B5F5FA00108D43 /* ArchitectureUsageTests */ = {
 			isa = PBXGroup;
 			children = (
+				CEB63DA129B622CB00108D43 /* TestMainModule */,
 				CEB63D7729B5F5FA00108D43 /* ArchitectureUsageTests.swift */,
 			);
 			path = ArchitectureUsageTests;
@@ -185,6 +188,14 @@
 				CEB63D6929B5F5FA00108D43 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEB63DA129B622CB00108D43 /* TestMainModule */ = {
+			isa = PBXGroup;
+			children = (
+				CEB63DA229B6232D00108D43 /* MainPresenterTest.swift */,
+			);
+			path = TestMainModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEB63D7829B5F5FA00108D43 /* ArchitectureUsageTests.swift in Sources */,
+				CEB63DA329B6232D00108D43 /* MainPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
