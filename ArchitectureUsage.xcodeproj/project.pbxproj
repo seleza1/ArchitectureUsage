@@ -13,9 +13,6 @@
 		CEB63D6829B5F5F600108D43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB63D6629B5F5F600108D43 /* Main.storyboard */; };
 		CEB63D6A29B5F5FA00108D43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB63D6929B5F5FA00108D43 /* Assets.xcassets */; };
 		CEB63D6D29B5F5FA00108D43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB63D6B29B5F5FA00108D43 /* LaunchScreen.storyboard */; };
-		CEB63D7829B5F5FA00108D43 /* ArchitectureUsageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB63D7729B5F5FA00108D43 /* ArchitectureUsageTests.swift */; };
-		CEB63D8229B5F5FA00108D43 /* ArchitectureUsageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB63D8129B5F5FA00108D43 /* ArchitectureUsageUITests.swift */; };
-		CEB63D8429B5F5FA00108D43 /* ArchitectureUsageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB63D8329B5F5FA00108D43 /* ArchitectureUsageUITestsLaunchTests.swift */; };
 		CEB63D9229B5F68900108D43 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB63D9129B5F68900108D43 /* Person.swift */; };
 		CEB63D9429B5F6D600108D43 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB63D9329B5F6D600108D43 /* MainPresenter.swift */; };
 		CEB63D9C29B5FF1200108D43 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB63D9B29B5FF1200108D43 /* MainViewController.xib */; };
@@ -25,13 +22,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		CEB63D7429B5F5FA00108D43 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CEB63D5529B5F5F600108D43 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CEB63D5C29B5F5F600108D43;
-			remoteInfo = ArchitectureUsage;
-		};
-		CEB63D7E29B5F5FA00108D43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEB63D5529B5F5F600108D43 /* Project object */;
 			proxyType = 1;
@@ -50,10 +40,6 @@
 		CEB63D6C29B5F5FA00108D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB63D6E29B5F5FA00108D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEB63D7329B5F5FA00108D43 /* ArchitectureUsageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitectureUsageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEB63D7729B5F5FA00108D43 /* ArchitectureUsageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureUsageTests.swift; sourceTree = "<group>"; };
-		CEB63D7D29B5F5FA00108D43 /* ArchitectureUsageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchitectureUsageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEB63D8129B5F5FA00108D43 /* ArchitectureUsageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureUsageUITests.swift; sourceTree = "<group>"; };
-		CEB63D8329B5F5FA00108D43 /* ArchitectureUsageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureUsageUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CEB63D9129B5F68900108D43 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		CEB63D9329B5F6D600108D43 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		CEB63D9B29B5FF1200108D43 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -76,13 +62,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEB63D7A29B5F5FA00108D43 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -91,7 +70,6 @@
 			children = (
 				CEB63D5F29B5F5F600108D43 /* ArchitectureUsage */,
 				CEB63D7629B5F5FA00108D43 /* ArchitectureUsageTests */,
-				CEB63D8029B5F5FA00108D43 /* ArchitectureUsageUITests */,
 				CEB63D5E29B5F5F600108D43 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,7 +79,6 @@
 			children = (
 				CEB63D5D29B5F5F600108D43 /* ArchitectureUsage.app */,
 				CEB63D7329B5F5FA00108D43 /* ArchitectureUsageTests.xctest */,
-				CEB63D7D29B5F5FA00108D43 /* ArchitectureUsageUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,18 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				CEB63DA129B622CB00108D43 /* TestMainModule */,
-				CEB63D7729B5F5FA00108D43 /* ArchitectureUsageTests.swift */,
 			);
 			path = ArchitectureUsageTests;
-			sourceTree = "<group>";
-		};
-		CEB63D8029B5F5FA00108D43 /* ArchitectureUsageUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CEB63D8129B5F5FA00108D43 /* ArchitectureUsageUITests.swift */,
-				CEB63D8329B5F5FA00108D43 /* ArchitectureUsageUITestsLaunchTests.swift */,
-			);
-			path = ArchitectureUsageUITests;
 			sourceTree = "<group>";
 		};
 		CEB63D9529B5FDD400108D43 /* MainModule */ = {
@@ -236,24 +203,6 @@
 			productReference = CEB63D7329B5F5FA00108D43 /* ArchitectureUsageTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CEB63D7C29B5F5FA00108D43 /* ArchitectureUsageUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CEB63D8D29B5F5FA00108D43 /* Build configuration list for PBXNativeTarget "ArchitectureUsageUITests" */;
-			buildPhases = (
-				CEB63D7929B5F5FA00108D43 /* Sources */,
-				CEB63D7A29B5F5FA00108D43 /* Frameworks */,
-				CEB63D7B29B5F5FA00108D43 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CEB63D7F29B5F5FA00108D43 /* PBXTargetDependency */,
-			);
-			name = ArchitectureUsageUITests;
-			productName = ArchitectureUsageUITests;
-			productReference = CEB63D7D29B5F5FA00108D43 /* ArchitectureUsageUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -268,10 +217,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					CEB63D7229B5F5FA00108D43 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = CEB63D5C29B5F5F600108D43;
-					};
-					CEB63D7C29B5F5FA00108D43 = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = CEB63D5C29B5F5F600108D43;
 					};
@@ -292,7 +237,6 @@
 			targets = (
 				CEB63D5C29B5F5F600108D43 /* ArchitectureUsage */,
 				CEB63D7229B5F5FA00108D43 /* ArchitectureUsageTests */,
-				CEB63D7C29B5F5FA00108D43 /* ArchitectureUsageUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -310,13 +254,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CEB63D7129B5F5FA00108D43 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEB63D7B29B5F5FA00108D43 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -343,17 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB63D7829B5F5FA00108D43 /* ArchitectureUsageTests.swift in Sources */,
 				CEB63DA329B6232D00108D43 /* MainPresenterTest.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEB63D7929B5F5FA00108D43 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CEB63D8229B5F5FA00108D43 /* ArchitectureUsageUITests.swift in Sources */,
-				CEB63D8429B5F5FA00108D43 /* ArchitectureUsageUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,11 +291,6 @@
 			isa = PBXTargetDependency;
 			target = CEB63D5C29B5F5F600108D43 /* ArchitectureUsage */;
 			targetProxy = CEB63D7429B5F5FA00108D43 /* PBXContainerItemProxy */;
-		};
-		CEB63D7F29B5F5FA00108D43 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CEB63D5C29B5F5F600108D43 /* ArchitectureUsage */;
-			targetProxy = CEB63D7E29B5F5FA00108D43 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -610,42 +532,6 @@
 			};
 			name = Release;
 		};
-		CEB63D8E29B5F5FA00108D43 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L86P4HUDQ3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = seleza1.ArchitectureUsageUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ArchitectureUsage;
-			};
-			name = Debug;
-		};
-		CEB63D8F29B5F5FA00108D43 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L86P4HUDQ3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = seleza1.ArchitectureUsageUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ArchitectureUsage;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -672,15 +558,6 @@
 			buildConfigurations = (
 				CEB63D8B29B5F5FA00108D43 /* Debug */,
 				CEB63D8C29B5F5FA00108D43 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CEB63D8D29B5F5FA00108D43 /* Build configuration list for PBXNativeTarget "ArchitectureUsageUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CEB63D8E29B5F5FA00108D43 /* Debug */,
-				CEB63D8F29B5F5FA00108D43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
