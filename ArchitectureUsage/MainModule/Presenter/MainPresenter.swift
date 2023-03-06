@@ -7,29 +7,21 @@
 
 import Foundation
 
-protocol MainViewProtocol: Any {
-    func setGreeting(greeting: String)
+protocol MainViewProtocol: AnyObject {
+    func succes()
+    func failure()
 }
 
-protocol MainViewPresenterProtocol: Any {
-    init(view: MainViewProtocol, person: Person)
-    func showGreeting()
+protocol MainViewPresenterProtocol: AnyObject {
+    init(view: MainViewProtocol, networkService: NetworkService)
 }
 
 class MainPresenter:MainViewPresenterProtocol {
+    unowned let view: MainViewProtocol
+    let networkService: NetworkServiceProtocol!
 
-    let view: MainViewProtocol
-    let person: Person
-
-    required init(view: MainViewProtocol, person: Person) {
+    required init(view: MainViewProtocol, networkService: NetworkService) {
         self.view = view
-        self.person = person
+        self.networkService = networkService
     }
-
-    func showGreeting() {
-        let greeting = "\(person.firstName) + \(person.lastName)"
-        view.setGreeting(greeting: greeting)
-    }
-
-
 }

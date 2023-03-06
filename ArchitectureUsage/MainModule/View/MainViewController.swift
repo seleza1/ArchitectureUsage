@@ -37,7 +37,11 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
 }
 
 extension MainViewController: MainViewProtocol {
-    func setGreeting(greeting: String) {
+    func succes() {
+        <#code#>
+    }
+
+    func failure() {
+        <#code#>
     }
 }
-
