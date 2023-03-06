@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="ArchitectureUsage" customModuleProvider="target">
             <connections>
-                <outlet property="greetingLabel" destination="I15-dO-e1P" id="1dA-ug-kZO"/>
+                <outlet property="tableView" destination="rWf-WM-Gca" id="8va-07-MsL"/>
                 <outlet property="view" destination="iN0-l3-epB" id="URC-IH-pGg"/>
             </connections>
         </placeholder>
@@ -20,35 +20,22 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="89" translatesAutoresizingMaskIntoConstraints="NO" id="4NH-HL-ZyA">
-                    <rect key="frame" x="169.66666666666666" y="296.33333333333331" width="75" height="143.66666666666669"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I15-dO-e1P">
-                            <rect key="frame" x="16" y="0.0" width="43" height="20.333333333333332"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggk-EE-BVf">
-                            <rect key="frame" x="0.0" y="109.33333333333337" width="75" height="34.333333333333343"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            <connections>
-                                <action selector="showGreetingButton:" destination="-1" eventType="touchUpInside" id="Dll-mK-w4s"/>
-                            </connections>
-                        </button>
-                    </subviews>
-                    <constraints>
-                        <constraint firstItem="I15-dO-e1P" firstAttribute="leading" secondItem="4NH-HL-ZyA" secondAttribute="leading" constant="16" id="W5L-jl-nDO"/>
-                        <constraint firstAttribute="trailing" secondItem="I15-dO-e1P" secondAttribute="trailing" constant="16" id="jzh-sp-cTC"/>
-                    </constraints>
-                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rWf-WM-Gca">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="LWL-90-XQA"/>
+                        <outlet property="delegate" destination="-1" id="kho-mJ-ObL"/>
+                    </connections>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="4NH-HL-ZyA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0Fo-ev-FEn"/>
-                <constraint firstItem="4NH-HL-ZyA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ihW-jC-2PM"/>
+                <constraint firstItem="rWf-WM-Gca" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="9UJ-Rt-iHf"/>
+                <constraint firstItem="rWf-WM-Gca" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="AI3-LK-46Y"/>
+                <constraint firstItem="rWf-WM-Gca" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ikq-I6-vyR"/>
+                <constraint firstItem="rWf-WM-Gca" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="mVA-IG-WZm"/>
             </constraints>
             <point key="canvasLocation" x="139.13043478260872" y="19.565217391304348"/>
         </view>

@@ -89,8 +89,6 @@
 				CEB63D9929B5FE1200108D43 /* Applications */,
 				CEB63D9529B5FDD400108D43 /* MainModule */,
 				CEB63D9A29B5FE3B00108D43 /* Resources */,
-				CEB63D6B29B5F5FA00108D43 /* LaunchScreen.storyboard */,
-				CEB63D6629B5F5F600108D43 /* Main.storyboard */,
 			);
 			path = ArchitectureUsage;
 			sourceTree = "<group>";
@@ -152,6 +150,8 @@
 		CEB63D9A29B5FE3B00108D43 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CEB63D6629B5F5F600108D43 /* Main.storyboard */,
+				CEB63D6B29B5F5FA00108D43 /* LaunchScreen.storyboard */,
 				CEB63D6929B5F5FA00108D43 /* Assets.xcassets */,
 			);
 			path = Resources;
