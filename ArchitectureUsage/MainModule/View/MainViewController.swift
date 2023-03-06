@@ -17,7 +17,6 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
-
 }
 
 extension MainViewController: UITableViewDataSource, UITableViewDelegate {
@@ -34,7 +33,9 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
 
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        <#code#>
+    }
 }
 
 extension MainViewController: MainViewProtocol {
