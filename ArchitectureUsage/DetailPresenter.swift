@@ -18,4 +18,20 @@ protocol DetailViewPresenterProtocol: AnyObject {
 
 class DetailPresenter: DetailViewPresenterProtocol {
 
+    weak var view: DetailViewProtocol?
+    let networkService: NetworkServiceProtocol!
+    var comment: Comment?
+
+
+    required init(view: DetailViewProtocol, networkService: NetworkService, comment: Comment?) {
+        self.view = view
+        self.networkService = networkService
+        self.comment = comment
+    }
+
+    func setComment() {
+        view?.setComment(comment: comment!)
+    }
+
+
 }

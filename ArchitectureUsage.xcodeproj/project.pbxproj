@@ -20,6 +20,8 @@
 		CEB63DA329B6232D00108D43 /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB63DA229B6232D00108D43 /* MainPresenterTest.swift */; };
 		CEB7D27729B6459E00B326C4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7D27629B6459E00B326C4 /* NetworkService.swift */; };
 		CEB7D27B29B669A600B326C4 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7D27A29B669A600B326C4 /* DetailPresenter.swift */; };
+		CEB7D27F29B66D0000B326C4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7D27D29B66D0000B326C4 /* DetailViewController.swift */; };
+		CEB7D28029B66D0000B326C4 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB7D27E29B66D0000B326C4 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		CEB63DA229B6232D00108D43 /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
 		CEB7D27629B6459E00B326C4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		CEB7D27A29B669A600B326C4 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		CEB7D27D29B66D0000B326C4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CEB7D27E29B66D0000B326C4 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				CEB63D9929B5FE1200108D43 /* Applications */,
+				CEB63D9D29B6001A00108D43 /* ModuleBuilder.swift */,
 				CEB63D9529B5FDD400108D43 /* MainModule */,
 				CEB7D27929B6697F00B326C4 /* DetailModule */,
 				CEB63D9A29B5FE3B00108D43 /* Resources */,
@@ -147,7 +152,6 @@
 			children = (
 				CEB63D6029B5F5F600108D43 /* AppDelegate.swift */,
 				CEB63D6229B5F5F600108D43 /* SceneDelegate.swift */,
-				CEB63D9D29B6001A00108D43 /* ModuleBuilder.swift */,
 				CEB63D6E29B5F5FA00108D43 /* Info.plist */,
 			);
 			path = Applications;
@@ -182,9 +186,27 @@
 		CEB7D27929B6697F00B326C4 /* DetailModule */ = {
 			isa = PBXGroup;
 			children = (
-				CEB7D27A29B669A600B326C4 /* DetailPresenter.swift */,
+				CEB7D27C29B66CCA00B326C4 /* Presenter */,
+				CEB7D28129B66EE500B326C4 /* View */,
 			);
 			name = DetailModule;
+			sourceTree = "<group>";
+		};
+		CEB7D27C29B66CCA00B326C4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CEB7D27A29B669A600B326C4 /* DetailPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		CEB7D28129B66EE500B326C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEB7D27D29B66D0000B326C4 /* DetailViewController.swift */,
+				CEB7D27E29B66D0000B326C4 /* DetailViewController.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +292,7 @@
 			files = (
 				CEB63D6D29B5F5FA00108D43 /* LaunchScreen.storyboard in Resources */,
 				CEB63D6A29B5F5FA00108D43 /* Assets.xcassets in Resources */,
+				CEB7D28029B66D0000B326C4 /* DetailViewController.xib in Resources */,
 				CEB63D6829B5F5F600108D43 /* Main.storyboard in Resources */,
 				CEB63D9C29B5FF1200108D43 /* MainViewController.xib in Resources */,
 			);
@@ -289,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB7D27F29B66D0000B326C4 /* DetailViewController.swift in Sources */,
 				CEB63D9429B5F6D600108D43 /* MainPresenter.swift in Sources */,
 				CEB63D6529B5F5F600108D43 /* MainViewController.swift in Sources */,
 				CEB63D6129B5F5F600108D43 /* AppDelegate.swift in Sources */,
