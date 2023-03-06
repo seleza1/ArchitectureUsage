@@ -103,15 +103,11 @@
 		CEB63D5F29B5F5F600108D43 /* ArchitectureUsage */ = {
 			isa = PBXGroup;
 			children = (
-				CEB63D6029B5F5F600108D43 /* AppDelegate.swift */,
-				CEB63D6229B5F5F600108D43 /* SceneDelegate.swift */,
-				CEB63D6429B5F5F600108D43 /* MainViewController.swift */,
-				CEB63D6629B5F5F600108D43 /* Main.storyboard */,
-				CEB63D6929B5F5FA00108D43 /* Assets.xcassets */,
+				CEB63D9929B5FE1200108D43 /* Applications */,
+				CEB63D9529B5FDD400108D43 /* MainModule */,
+				CEB63D9A29B5FE3B00108D43 /* Resources */,
 				CEB63D6B29B5F5FA00108D43 /* LaunchScreen.storyboard */,
-				CEB63D6E29B5F5FA00108D43 /* Info.plist */,
-				CEB63D9129B5F68900108D43 /* Person.swift */,
-				CEB63D9329B5F6D600108D43 /* MainPresenter.swift */,
+				CEB63D6629B5F5F600108D43 /* Main.storyboard */,
 			);
 			path = ArchitectureUsage;
 			sourceTree = "<group>";
@@ -131,6 +127,58 @@
 				CEB63D8329B5F5FA00108D43 /* ArchitectureUsageUITestsLaunchTests.swift */,
 			);
 			path = ArchitectureUsageUITests;
+			sourceTree = "<group>";
+		};
+		CEB63D9529B5FDD400108D43 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				CEB63D9829B5FE0000108D43 /* View */,
+				CEB63D9729B5FDFA00108D43 /* Presenter */,
+				CEB63D9629B5FDF100108D43 /* Model */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		CEB63D9629B5FDF100108D43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEB63D9129B5F68900108D43 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEB63D9729B5FDFA00108D43 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CEB63D9329B5F6D600108D43 /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CEB63D9829B5FE0000108D43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEB63D6429B5F5F600108D43 /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEB63D9929B5FE1200108D43 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				CEB63D6029B5F5F600108D43 /* AppDelegate.swift */,
+				CEB63D6229B5F5F600108D43 /* SceneDelegate.swift */,
+				CEB63D6E29B5F5FA00108D43 /* Info.plist */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		CEB63D9A29B5FE3B00108D43 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEB63D6929B5F5FA00108D43 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,7 +495,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L86P4HUDQ3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ArchitectureUsage/Info.plist;
+				INFOPLIST_FILE = ArchitectureUsage/Applications/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -479,7 +527,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L86P4HUDQ3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ArchitectureUsage/Info.plist;
+				INFOPLIST_FILE = ArchitectureUsage/Applications/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
