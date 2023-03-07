@@ -42,10 +42,11 @@ final class MainPresenterTest: XCTestCase {
     var networkService: NetworkServiceProtocol!
     var router: RouterProtocol!
     var comments = [Comment]()
+    let navigationController = UINavigationController()
+    let builder = ModelBuilder()
 
     override func setUpWithError() throws {
-        let navigationController = UINavigationController()
-        let builder = ModelBuilder()
+
         router = Router(navigationController: navigationController, assemblyBuilder: builder)
 
     }

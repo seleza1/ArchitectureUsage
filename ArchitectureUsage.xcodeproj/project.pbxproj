@@ -23,6 +23,7 @@
 		CEB7D27F29B66D0000B326C4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7D27D29B66D0000B326C4 /* DetailViewController.swift */; };
 		CEB7D28029B66D0000B326C4 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB7D27E29B66D0000B326C4 /* DetailViewController.xib */; };
 		CEB7D28329B700FE00B326C4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7D28229B700FE00B326C4 /* Router.swift */; };
+		CEB7D28729B7297B00B326C4 /* RouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7D28629B7297B00B326C4 /* RouterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		CEB7D27D29B66D0000B326C4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CEB7D27E29B66D0000B326C4 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		CEB7D28229B700FE00B326C4 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		CEB7D28629B7297B00B326C4 /* RouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				CEB63DA229B6232D00108D43 /* MainPresenterTest.swift */,
+				CEB7D28629B7297B00B326C4 /* RouterTest.swift */,
 			);
 			path = TestMainModule;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB7D28729B7297B00B326C4 /* RouterTest.swift in Sources */,
 				CEB63DA329B6232D00108D43 /* MainPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
