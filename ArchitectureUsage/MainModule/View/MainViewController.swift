@@ -35,7 +35,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let comment = presenter.comments?[indexPath.row]
-        presenter.tapOnTheComment(comment: comment)
+        presenter.tapOnTheComment(comment: comment!)
     }
 }
 
