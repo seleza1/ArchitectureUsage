@@ -10,10 +10,17 @@ import XCTest
 
 class MockNavigationController: UINavigationController {
     var presentedVC: UIViewController?
+    var popVC: UIViewController?
 
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         self.presentedVC = viewController
         super.pushViewController(viewController, animated: animated)
+    }
+
+    override func popToRootViewController(animated: Bool) -> [UIViewController]? {
+        let main = MainViewController()
+        self.popVC = main
+        return super.popToRootViewController(animated: animated)
     }
 
 
@@ -39,6 +46,13 @@ final class RouterTest: XCTestCase {
         let detailsVC = navigationController.presentedVC
         XCTAssertTrue(detailsVC is DetailViewController)
     }
+
+    func testRouterRoot() {
+        router.popToRoot()
+        let rootVC = navigationController.popVC
+        XCTAssertTrue(rootVC is MainViewController)
+    }
+
 
 
 }
