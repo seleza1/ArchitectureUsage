@@ -22,6 +22,7 @@
 		CEB7D27B29B669A600B326C4 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7D27A29B669A600B326C4 /* DetailPresenter.swift */; };
 		CEB7D27F29B66D0000B326C4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7D27D29B66D0000B326C4 /* DetailViewController.swift */; };
 		CEB7D28029B66D0000B326C4 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB7D27E29B66D0000B326C4 /* DetailViewController.xib */; };
+		CEB7D28329B700FE00B326C4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7D28229B700FE00B326C4 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		CEB7D27A29B669A600B326C4 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		CEB7D27D29B66D0000B326C4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CEB7D27E29B66D0000B326C4 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		CEB7D28229B700FE00B326C4 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				CEB63D9929B5FE1200108D43 /* Applications */,
 				CEB63D9D29B6001A00108D43 /* ModuleBuilder.swift */,
+				CEB7D28229B700FE00B326C4 /* Router.swift */,
 				CEB63D9529B5FDD400108D43 /* MainModule */,
 				CEB7D27929B6697F00B326C4 /* DetailModule */,
 				CEB63D9A29B5FE3B00108D43 /* Resources */,
@@ -314,6 +317,7 @@
 			files = (
 				CEB7D27F29B66D0000B326C4 /* DetailViewController.swift in Sources */,
 				CEB63D9429B5F6D600108D43 /* MainPresenter.swift in Sources */,
+				CEB7D28329B700FE00B326C4 /* Router.swift in Sources */,
 				CEB63D6529B5F5F600108D43 /* MainViewController.swift in Sources */,
 				CEB63D6129B5F5F600108D43 /* AppDelegate.swift in Sources */,
 				CEB7D27B29B669A600B326C4 /* DetailPresenter.swift in Sources */,

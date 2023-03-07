@@ -22,7 +22,6 @@ class DetailPresenter: DetailViewPresenterProtocol {
     let networkService: NetworkServiceProtocol!
     var comment: Comment?
 
-
     required init(view: DetailViewProtocol, networkService: NetworkService, comment: Comment?) {
         self.view = view
         self.networkService = networkService
@@ -32,6 +31,4 @@ class DetailPresenter: DetailViewPresenterProtocol {
     func setComment() {
         view?.setComment(comment: comment!)
     }
-
-
 }

@@ -7,14 +7,14 @@
 
 import UIKit
 
-protocol Builder {
-    static func createMain() -> UIViewController
-    static func createDetailModule(comment: Comment?) -> UIViewController
+protocol AssemblyBuilderProtocol {
+    func createMainModule() -> UIViewController
+    func createDetailModule(comment: Comment?) -> UIViewController
 }
 
-class ModelBuilder: Builder {
+class ModelBuilder: AssemblyBuilderProtocol {
 
-    static func createMain() -> UIViewController {
+    func createMainModule() -> UIViewController {
         let view = MainViewController()
         let networkService = NetworkService()
         let presenter = MainPresenter(view: view, networkService: networkService)
@@ -23,7 +23,7 @@ class ModelBuilder: Builder {
         return view
     }
 
-    static func createDetailModule(comment: Comment?) -> UIViewController {
+    func createDetailModule(comment: Comment?) -> UIViewController {
         let view = DetailViewController()
         let networkService = NetworkService()
         let presenter = DetailPresenter(view: view, networkService: networkService, comment: comment)
