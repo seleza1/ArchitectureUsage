@@ -97,8 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				CEB63D9929B5FE1200108D43 /* Applications */,
-				CEB63D9D29B6001A00108D43 /* ModuleBuilder.swift */,
-				CEB7D28229B700FE00B326C4 /* Router.swift */,
+				CEB7D28529B71ACE00B326C4 /* Builder */,
+				CEB7D28429B7102F00B326C4 /* Router */,
 				CEB63D9529B5FDD400108D43 /* MainModule */,
 				CEB7D27929B6697F00B326C4 /* DetailModule */,
 				CEB63D9A29B5FE3B00108D43 /* Resources */,
@@ -189,8 +189,8 @@
 		CEB7D27929B6697F00B326C4 /* DetailModule */ = {
 			isa = PBXGroup;
 			children = (
-				CEB7D27C29B66CCA00B326C4 /* Presenter */,
 				CEB7D28129B66EE500B326C4 /* View */,
+				CEB7D27C29B66CCA00B326C4 /* Presenter */,
 			);
 			name = DetailModule;
 			sourceTree = "<group>";
@@ -210,6 +210,22 @@
 				CEB7D27E29B66D0000B326C4 /* DetailViewController.xib */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		CEB7D28429B7102F00B326C4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CEB7D28229B700FE00B326C4 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CEB7D28529B71ACE00B326C4 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				CEB63D9D29B6001A00108D43 /* ModuleBuilder.swift */,
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

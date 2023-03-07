@@ -9,37 +9,71 @@ import XCTest
 @testable import ArchitectureUsage
 
 class MockView: MainViewProtocol {
-    var titleTest: String?
-    func setGreeting(greeting: String) {
-        titleTest = greeting
+    func succes() {
+    }
+
+    func failure(error: Error) {
+    }
+}
+
+class MockNetworkService: NetworkServiceProtocol {
+    var comments: [Comment]!
+    init() {}
+
+    convenience init(comments: [Comment]?) {
+        self.init()
+        self.comments = comments
+    }
+
+    func getComments(completion: @escaping (Result<[ArchitectureUsage.Comment], ArchitectureUsage.NetworkError>) -> Void) {
+        if let comments = comments {
+            completion(.success(comments))
+        } else {
+            let error = NSError(domain: "", code: 0, userInfo: nil)
+            completion(.failure(error as! NetworkError))
+
+        }
     }
 }
 
 final class MainPresenterTest: XCTestCase {
     var view: MockView!
-    var person: Person!
     var presenter: MainPresenter!
+    var networkService: NetworkServiceProtocol!
+    var router: RouterProtocol!
+    var comments = [Comment]()
 
     override func setUpWithError() throws {
-        view = MockView()
-        person = Person(firstName: "Baz", lastName: "Bar")
-        presenter = MainPresenter(view: view, person: person)
+        let navigationController = UINavigationController()
+        let builder = ModelBuilder()
+        router = Router(navigationController: navigationController, assemblyBuilder: builder)
+
     }
 
-    override func tearDownWithError() throws {
+    override func tearDown() {
         view = nil
-        person = nil
+        networkService = nil
         presenter = nil
     }
 
-    func testModuleNotNil() {
-        XCTAssertNotNil(view, "view is not nil")
-        XCTAssertNotNil(person, "view is not nil")
-        XCTAssertNotNil(presenter, "view is not nil")
-    }
+    func testGetSuccesComments() {
+        let comment = Comment(postId: 1, id: 2, name: "Foo", email: "Bar", body: "Baz")
+        comments.append(comment)
+        view = MockView()
+        networkService = MockNetworkService(comments: [comment])
+        presenter = MainPresenter(view: view, networkService: networkService, router: router)
 
-    func testView() {
-        presenter.showGreeting()
-        XCTAssertEqual(view.titleTest, "Baz + Bar")
+        var catchComments: [Comment]?
+
+        networkService.getComments { result in
+            switch result {
+            case .success(let comments):
+                catchComments = comments
+            case .failure(let error):
+                print(error)
+            }
+        }
+        XCTAssertNotEqual(catchComments?.count, 0)
+
     }
 }
